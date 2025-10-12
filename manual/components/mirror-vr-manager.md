@@ -112,10 +112,11 @@ Features that are currently still in Beta. Expect bugs.
 
 ## Static Methods
 
-* `JoinOrCreateLobby(string lobbycode, int maxPlayers)`
+* `JoinOrCreateLobby(string lobbycode, int maxPlayers, AttributeData[] ExtraAttributes)`
   * A combination of `JoinLobby(string)` and `CreateLobby(string, int)` that will first check if that room exists already, and if it does, join it, but if it doesn't, create a new room.
     * `lobbycode` - The lobby code entered.
     * `maxPlayers` - The maximum number of players that can join this room. Set in-code as -1, but it is actually `MirrorVRManager.instance.roomLimit`.
+    * `ExtraAttributes` - Optional attributes if you want to add them, used for filtering joinable lobbies and creating lobbies.
 
 
 
@@ -125,16 +126,19 @@ Features that are currently still in Beta. Expect bugs.
 
 
 
-* `CreateLobby(string lobbycode, int maxPlayers)`
-  * Creates a new room. Though it is strongly recommended to use `JoinOrCreateLobby(string, int)` instead.
-    * `lobbycode` - The lobby code entered.
-    * `maxPlayers` - The maximum number of players that can join this room. Set in-code as -1, but it is actually `MirrorVRManager.instance.roomLimit`.
+*   `CreateLobby(string lobbycode, int maxPlayers, AttributeData[] ExtraAttributes)`
 
+    * Creates a new room. Though it is strongly recommended to use `JoinOrCreateLobby(string, int)` instead.
+      * `lobbycode` - The lobby code entered.
+      * `maxPlayers` - The maximum number of players that can join this room. Set in-code as -1, but it is actually `MirrorVRManager.instance.roomLimit`.&#x20;
+      * `ExtraAttributes` - Optional attributes if you want to add them.  &#x20;
 
+    &#x20;&#x20;
 
-* `JoinRandomLobby(int maxPlayers)`
-  * Joins a random lobby.
-    * `maxPlayers` - The maximum number of players that can join this room. Set in-code as -1, but it is actually `MirrorVRManager.instance.roomLimit`.
+`JoinRandomLobby(int maxPlayers)`
+
+* Joins a random lobby.
+  * `maxPlayers` - The maximum number of players that can join this room. Set in-code as -1, but it is actually `MirrorVRManager.instance.roomLimit`.
 
 
 
