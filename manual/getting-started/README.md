@@ -36,7 +36,7 @@ If you have any obfuscators, make sure the following namespaces are added to the
 {% step %}
 First, download the latest version of [Mirror](https://github.com/MirrorNetworking/Mirror/releases/latest) and put it into your game. Mirror is the backbone of MirrorVR and is how players communicate with each other.
 
-Then, after Mirror is installed in your project, install EOSTransport. This is the core bridge between Mirror and EOS.
+Then, after Mirror is installed in your project, install [EOSTransport](https://github.com/CodedImmersions/EOSTransport/releases/latest). This is the core bridge between Mirror and EOS.
 
 Once both are installed, get the [latest MirrorVR package](https://github.com/MirrorVR/MirrorVR/releases/latest) and put it in your game.
 
