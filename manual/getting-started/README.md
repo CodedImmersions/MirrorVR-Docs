@@ -22,7 +22,7 @@ If you have any obfuscators, make sure the following namespaces are added to the
 ### Dependencies
 
 * **Newtonsoft.Json**
-  * Make sure you have this installed. To install, go to `Window > Package Manager`, then hit the `+` icon in the top left, then `Add package by name...`, then type in `com.unity.nuget.newtonsoft-json`, and hit `Add` or `Install`.
+  * Make sure you have this installed. To install, go to `Window > (Package Management) > Package Manager`, then hit the `+` icon in the top left, then `Add package by name...`, then type in `com.unity.nuget.newtonsoft-json`, and hit `Add` or `Install`.
 * **Unity Version**
   * The recommended Unity version for MirrorVR is Unity 6000.3, but you should be able to use this package with no issues if you are on Unity 6000.0.38f1+.
 * **Universal Render Pipeline**
