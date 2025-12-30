@@ -2,6 +2,7 @@
 description: >-
   Are you stuck on where to begin? Follow this guide that will send you through
   the setup process FAST!
+icon: box-circle-check
 ---
 
 # Getting Started
@@ -23,7 +24,7 @@ If you have any obfuscators, make sure the following namespaces are added to the
 * **Newtonsoft.Json**
   * Make sure you have this installed. To install, go to `Window > Package Manager`, then hit the `+` icon in the top left, then `Add package by name...`, then type in `com.unity.nuget.newtonsoft-json`, and hit `Add` or `Install`.
 * **Unity Version**
-  * The recommended Unity version for MirrorVR is Unity 6+, but you should be able to use this package with no issues if you are on Unity 2021.3.35f1+.
+  * The recommended Unity version for MirrorVR is Unity 6000.3, but you should be able to use this package with no issues if you are on Unity 6000.0.38f1+.
 * **Universal Render Pipeline**
   * It is recommended to have URP installed before installing this package. It's not required, it's just a suggestion.
 
@@ -33,8 +34,11 @@ If you have any obfuscators, make sure the following namespaces are added to the
 
 {% stepper %}
 {% step %}
-First, download the latest version of [Mirror](https://github.com/MirrorNetworking/Mirror) and put it into your game.\
-Then, after Mirror is installed in your project, get the [latest MirrorVR package](https://github.com/MirrorVR/MirrorVR/releases/latest) and put it in your game.
+First, download the latest version of [Mirror](https://github.com/MirrorNetworking/Mirror/releases/latest) and put it into your game. Mirror is the backbone of MirrorVR and is how players communicate with each other.
+
+Then, after Mirror is installed in your project, install EOSTransport. This is the core bridge between Mirror and EOS.
+
+Once both are installed, get the [latest MirrorVR package](https://github.com/MirrorVR/MirrorVR/releases/latest) and put it in your game.
 
 
 {% endstep %}
@@ -48,10 +52,10 @@ Go to `Assets/MirrorVR` in your Unity Project. That is where the package is loca
 {% endstep %}
 
 {% step %}
-Now open up the Network Manager object you just dragged into the scene.\
+Now open the Network Manager object you just dragged into the scene.\
 Assign the Player Transforms to their values. Skip API Keys and Encryption Key for now, we will cover those in a bit.
 
-Go right to the Settings section. Configure then how you want them. If you need details on what some settings do, see [mirror-vr-manager.md](../components/mirror-vr-manager.md "mention").
+Go right to the Settings section. Configure it however you like. See [mirror-vr-manager.md](../components/mirror-vr-manager.md "mention") for details.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-07-27 153719.png" alt=""><figcaption></figcaption></figure>
 
@@ -59,9 +63,9 @@ Go right to the Settings section. Configure then how you want them. If you need 
 {% endstep %}
 
 {% step %}
-Now to set up Epic Online Services. If you are using the Dedicated Servers or PlayFab (coming soon) features, you still need to use Epic, as it provides an awesome player management backend to make your game better.\
+Now, to set up Epic Online Services. If you are using Dedicated Server or PlayFab features, you still need to use Epic, as it provides a player management backend to improve your game.\
 \
-Head right over to the [Epic Games Developer Portal](https://dev.epicgames.com/portal), Sign in, and create an organization if you don't have one already.
+Head right over to the [Epic Games Developer Portal](https://dev.epicgames.com/portal), sign in, and create an organization if you don't have one already.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-07-29 212551.png" alt=""><figcaption></figcaption></figure>
 
@@ -106,7 +110,7 @@ Now scroll up a little to the `Clients` section. Click the `Add new client` butt
 
 <figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Client Name can be anything. On client policy, select the one we just created. We can skip IP allow list and Redirect URL, as they aren't needed for our case.
+Client Name can be anything. On client policy, select the one we just created. We can skip IP allow list and redirect URL, as they aren't needed for our case.
 
 <figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -172,26 +176,6 @@ Under `SDK Download & Credentials`, scroll to the bottom to get your API Keys.
 {% endstep %}
 
 {% step %}
-Now scroll up, and on the right side of your screen, click the `Downloads & Release notes` button.
-
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
-Go back to your project, and go to `Assets/MirrorVR/Transports/EOSTransport/EOSSDK/version.txt`. That's the version of the SDK you need to download, so keep that version in mind. Now select the SDK Type dropdown, and choose the C# SDK. Now, on the version dropdown, select the correct version you have that is in that file. Like if the file said `1.17.1.3-CL44532354`, choose that in the dropdown.
-
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-
-Now hit the `Download EOS SDK` button. This file will be big because it contains all of the EOSSDK assemblies that aren't included in the MirrorVR package to make the package size smaller.
-{% endstep %}
-
-{% step %}
-Once it's done downloading, go to `Window > MirrorVR > Assembly Loader`. Hit the Select Zip button, and select the EOS SDK zip file. Now hit Load Assemblies, and wait a few seconds. This will load all of the needed EOSSDK assemblies into your project.
-
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
-
-After it's done, you may delete the zip.
-{% endstep %}
-
-{% step %}
 Now go back to MirrorVRManager and put these credentials in their fields.
 
 <figure><img src="../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
@@ -202,7 +186,7 @@ While we are here, let's set the Encryption Key.
 The Encryption Key will be used to read and write to Title Storage (10 free GB per app) and Player Data Storage (400 MB or 1000 files per player). Make sure you store it somewhere safe so you can use it later.
 {% endhint %}
 
-&#x20;Go to [this website](https://generate.plus/en/hex) to generate a 32-byte hexadecimal string we can use as the encryption key.\
+Go to [this website](https://generate.plus/en/hex) to generate a 32-byte hexadecimal string we can use as the encryption key.\
 Set the number in the lower left to 32, copy it, put it into the Encryption Key field in MirrorVRManager, and you're all set!
 
 <figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
@@ -212,7 +196,7 @@ Set the number in the lower left to 32, copy it, put it into the Encryption Key 
 And the basic setup is done! See below for next steps.
 
 {% hint style="warning" %}
-If you are using Oculus or Steam, there's setup for those, too.\
+If you are using Oculus or Steam, there's also a setup for those.\
 See [meta-quest-setup.md](meta-quest-setup.md "mention") or [steam-setup.md](steam-setup.md "mention") to do those.
 {% endhint %}
 {% endstep %}

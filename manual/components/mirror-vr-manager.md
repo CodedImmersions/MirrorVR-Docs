@@ -1,5 +1,6 @@
 ---
-description: Main Manager for MirrorVR
+description: The Main Manager for MirrorVR
+icon: wrench
 ---
 
 # Mirror VR Manager

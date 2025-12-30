@@ -1,3 +1,7 @@
+---
+icon: steam
+---
+
 # Steam Setup
 
 {% hint style="warning" %}
@@ -26,7 +30,7 @@ This will bring you to your project's root directory. Look for a file called `st
 {% endstep %}
 
 {% step %}
-Now go back into your project, and navigate to `Assets/Scripts/Steamworks.NET/SteamManager.cs`. Open it, and scroll down to the Awake method. Search (or press Ctrl/Cmd + F), and paste in `SteamAPI.RestartAppIfNecessary`, then hit enter. You should be on a line that says `if (SteamAPI.RestartAppIfNecessary(AppId_t.Invalid))`. Replace `AppId_t.Invalid` with `(AppId_t)<appid>` (replace \<appid> with your app id, such as 480). The line should now look something like `if (SteamAPI.RestartAppIfNecessary((AppId_t)480))`.
+Now, back in your project, you'll have an error about how the SteamManager can't be found. Move it from `Assets/Scripts/Steamworks.NET/SteamManager.cs` to `Assets (or Packages)/com.rlabrecque.steamworks.net/Runtime/SteamManager.cs`. Now open SteamManager, and scroll down to the Awake method. Search (or press Ctrl/Cmd + F), and paste in `SteamAPI.RestartAppIfNecessary`, then hit enter. You should be on a line that says `if (SteamAPI.RestartAppIfNecessary(AppId_t.Invalid))`. Replace `AppId_t.Invalid` with `(AppId_t)<appid>` (replace \<appid> with your app id, such as 480). The line should now look something like `if (SteamAPI.RestartAppIfNecessary((AppId_t)480))`.
 
 <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 

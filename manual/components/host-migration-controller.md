@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Host Migration Controller
 
 ## Introduction

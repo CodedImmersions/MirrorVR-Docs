@@ -1,3 +1,7 @@
+---
+icon: meta
+---
+
 # Meta Quest Setup
 
 {% hint style="warning" %}
@@ -141,8 +145,7 @@ If you selected no, you can skip to the next question. If you selected yes, foll
 <figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 This one is pretty straightforward: hit Add data processor or service provider.\
-For each provider you use, click the button once. I'm going to add one for Epic Online Services, but if you use PlayFab, you have to add that in as well.\
-
+For each provider you use, click the button once. I'm going to add one for Epic Online Services, but if you use PlayFab, you have to add that in as well.<br>
 
 <figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 

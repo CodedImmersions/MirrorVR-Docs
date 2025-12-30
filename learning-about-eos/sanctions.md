@@ -1,3 +1,7 @@
-# Sanctions (aka Banning)
+---
+icon: scale-balanced
+---
+
+# Sanctions
 
 WIP

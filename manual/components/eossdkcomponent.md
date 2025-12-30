@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # EOSSDKComponent
 
 ## Introduction
@@ -9,8 +13,7 @@ The file has gone through many editing phases, so it may look all out of whack.\
 First, FakeByte, the original maintainer of EOSTransport, made the file and did a lot of the work.\
 Next, Ludogram, the next maintainer of EOSTransport, added a few things to make EOSTransport work smoothly.\
 After that, Katone took over as maintainer and made a lot of changes to fix bugs and improve performance.\
-Finally, the MirrorVR team modified it to add things required for MirrorVR, such as Meta Quest login.\
-
+Finally, the MirrorVR team modified it to add things required for MirrorVR, such as Meta Quest login.<br>
 
 ## Static Methods
 
