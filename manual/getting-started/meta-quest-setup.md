@@ -20,7 +20,7 @@ If you didn't have an organization before, you will need to verify your identity
 Your legal name in the [Meta Accounts Center](https://accountscenter.meta.com/accounts) MUST match the name on the ID if doing admin verification.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 {% endstep %}
@@ -32,7 +32,7 @@ Install the [Meta XR Core SDK](https://assetstore.unity.com/packages/tools/integ
 Once done, go to your project again and at the top, click on `Meta > Platform >` \
 `Edit Settings`.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 {% endstep %}
@@ -40,7 +40,7 @@ Once done, go to your project again and at the top, click on `Meta > Platform >`
 {% step %}
 Let's add your App IDs. Go back to your Meta app in your browser. On the left-hand sidebar, go under `Development > API`.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Here is where all of your App IDs are. Go down to the App ID header, copy your app ID, and paste it in both the Oculus Rift and Meta Quest App ID fields in the settings. \
 \
@@ -50,7 +50,7 @@ Make sure you also enable the `Use Standalone Platform` and `Use Meta Quest App 
 **DO NOT** share these IDs with **ANYONE**! The App Secret **alone** can give hackers access to many things you wouldn't want.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 Note that App IDs and Federated App IDs are two different things! Make sure you use the _App ID,_ not the _Federated App ID_!
@@ -62,16 +62,16 @@ Note that App IDs and Federated App IDs are two different things! Make sure you 
 {% step %}
 Now your Platform Settings should look something like this:
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Now, the big error box, how do we fix that, you may ask. Easy! Go back to your browser, and on the left-hand sidebar, go to the tab just below API, which should be called "Test Users".
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Then go to the top right and hit the `Add Test User` button.\
 Go ahead and fill out all details.
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Then hit submit at the bottom right and wait a bit.
 
@@ -81,13 +81,13 @@ Then hit submit at the bottom right and wait a bit.
 {% step %}
 Now, after waiting, it should have created a test user. Go to the three dots on the right of all the details, and hit `View Test User Data`.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Now, hit the Copy button next to the email field, then hit cancel. Go back to Unity, paste the email you just copied into the `Test User Email` field, and type in the password for the test user in the `Test User Password` field. Then hit login.\
 \
 If your Unity Editor Settings look like this, then you're all set!
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 {% endstep %}

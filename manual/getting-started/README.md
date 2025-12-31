@@ -82,11 +82,11 @@ Name your product. It should be your game name. Once done, hit the create button
 {% step %}
 Once your product has been created and it's done loading, click on it. On the left-hand side of your screen, click on the `Product Settings` tab.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Now click on the `Clients` tab.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 {% endstep %}
@@ -94,11 +94,11 @@ Now click on the `Clients` tab.
 {% step %}
 Scroll towards the bottom, where it says `Client policies`. Click the blue `Add new client policy` button.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Name your policy whatever you want, and set `Policy Type` to be `Peer2Peer`.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 At the bottom right of your screen, press the blue `Add new client policy` button.
 
@@ -108,11 +108,11 @@ At the bottom right of your screen, press the blue `Add new client policy` butto
 {% step %}
 Now scroll up a little to the `Clients` section. Click the `Add new client` button.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Client Name can be anything. On client policy, select the one we just created. We can skip IP allow list and redirect URL, as they aren't needed for our case.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 On the bottom right of your screen, click the `Add new client` button.
 
@@ -122,7 +122,7 @@ On the bottom right of your screen, click the `Add new client` button.
 {% step %}
 Next, go to the `Epic Account Services` tab.
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Hit the `Create Application` button.
 
@@ -189,7 +189,7 @@ The Encryption Key will be used to read and write to Title Storage (10 free GB p
 Go to [this website](https://generate.plus/en/hex) to generate a 32-byte hexadecimal string we can use as the encryption key.\
 Set the number in the lower left to 32, copy it, put it into the Encryption Key field in MirrorVRManager, and you're all set!
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}

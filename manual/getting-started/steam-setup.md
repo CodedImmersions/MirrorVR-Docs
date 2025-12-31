@@ -24,7 +24,7 @@ Download the latest [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NE
 {% step %}
 Now go to Unity Hub, click the three dots next to your project, then hit either Show in Explorer or Reveal in Finder, depending on what platform you're on.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 This will bring you to your project's root directory. Look for a file called `steam_appid.txt` and open it. Paste in either your app ID or `480` into the text, save, then close.
 {% endstep %}
@@ -32,7 +32,7 @@ This will bring you to your project's root directory. Look for a file called `st
 {% step %}
 Now, back in your project, you'll have an error about how the SteamManager can't be found. Move it from `Assets/Scripts/Steamworks.NET/SteamManager.cs` to `Assets (or Packages)/com.rlabrecque.steamworks.net/Runtime/SteamManager.cs`. Now open SteamManager, and scroll down to the Awake method. Search (or press Ctrl/Cmd + F), and paste in `SteamAPI.RestartAppIfNecessary`, then hit enter. You should be on a line that says `if (SteamAPI.RestartAppIfNecessary(AppId_t.Invalid))`. Replace `AppId_t.Invalid` with `(AppId_t)<appid>` (replace \<appid> with your app id, such as 480). The line should now look something like `if (SteamAPI.RestartAppIfNecessary((AppId_t)480))`.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 Save the script, and let it compile.
 {% endstep %}
@@ -40,13 +40,13 @@ Save the script, and let it compile.
 {% step %}
 Now go to your hierarchy, and create a new GameObject named something along the lines of "Steam Manager". Add component, Steam Manager.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 Now, go to your MirrorVRManager, and make sure that the auth types are set correctly:
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 And you're all set! Make sure to join our [Discord](https://discord.gg/6KCH9xvGUE) for updates or if you need help!
 {% endstep %}
