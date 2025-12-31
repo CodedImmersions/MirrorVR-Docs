@@ -7,7 +7,21 @@ icon: ban-bug
 
 Here's a simple guide for grabbing your game logs on both Quest and PC. Providing us with your logs where you have an issue is a key step to fixing your issue and helping us improve MirrorVR.
 
-Pick your platform below to see the instructions.
+## First Steps
+
+The first thing you will want to do to properly set this up is go to the Network Manager object.\
+Once there, go to Mirror VR Manager, and scroll down to the Settings section.
+
+Find Logger Level, and set that to Info.
+
+<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+
+Now, find the EOS Manager component.\
+Change Transport Logger Level to Info, and EOS Logger Level to Very Verbose.
+
+<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+
+And just like that, you're all set to begin!
 
 ## Meta Quest
 
@@ -78,7 +92,7 @@ Now that you have the logs, you need to send them to us. Once your play session 
 Create a new file, and name it in this format:\
 `YYYY-MM-DD <Game Name> Mirror VR Logs.log`&#x20;
 
-Then just simply paste in the contents with Ctrl (Cmd) + V, and hit Ctrl (Cmd) + S to save.
+Then, just simply paste in the contents with `Ctrl (Cmd) + V`, and hit `Ctrl (Cmd) + S` to save.
 {% endstep %}
 
 {% step %}
@@ -134,4 +148,32 @@ And you're done! Great job.
 
 ## Unity Editor
 
-WIP
+{% stepper %}
+{% step %}
+Unity Editor is straightforward. Enter play mode and collect your logs if you haven't already.\
+**Make sure you have Info, Warning, and Error enabled in the console.**
+{% endstep %}
+
+{% step %}
+Once you have collected your logs, go to the console tab.\
+If your console tab is not open, go to `Window >  General > Console`.
+{% endstep %}
+
+{% step %}
+Now, simply press `Ctrl (Cmd) + A`, and `Ctrl (Cmd) + C`.\
+All the logs should now be highlighted and in your clipboard.
+{% endstep %}
+
+{% step %}
+Create a new file, and name it in this format:\
+`YYYY-MM-DD <Game Name> Mirror VR Logs.log`&#x20;
+
+Then, just simply paste in the contents with `Ctrl (Cmd) + V`, and hit `Ctrl (Cmd) + S` to save.
+{% endstep %}
+
+{% step %}
+Once your log file is ready, either attach it to your GitHub issue or send it to thetechwiz5305 or shad0w\_dev on Discord.
+
+And you're done! Great job.
+{% endstep %}
+{% endstepper %}
