@@ -16,7 +16,7 @@ See [photonvr-to-mirrorvr.md](../guides/photonvr-to-mirrorvr.md "mention") or [f
 
 {% hint style="warning" %}
 If you have any obfuscators, make sure the following namespaces are added to the skipped namespaces list:\
-`Mirror`, `Mirror.VR`, `MetaVoiceChat`, `EpicTransport`
+`Mirror`, `Mirror.VR`, `MetaVoiceChat`, `EpicTransport`, `Epic.OnlineServices`
 {% endhint %}
 
 ### Dependencies
