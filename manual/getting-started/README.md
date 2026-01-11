@@ -189,6 +189,10 @@ The Encryption Key will be used to read and write to Title Storage (10 free GB p
 Go to [this website](https://generate.plus/en/hex) to generate a 32-byte hexadecimal string we can use as the encryption key.\
 Set the number in the lower left to 32, copy it, put it into the Encryption Key field in MirrorVRManager, and you're all set!
 
+{% hint style="warning" %}
+Make sure you save your Encryption Key in some Cloud Storage service in case you lose it, because once you set it, you cannot change it without breaking things.
+{% endhint %}
+
 <figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 

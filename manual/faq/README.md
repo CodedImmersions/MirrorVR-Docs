@@ -1,7 +1,6 @@
 ---
 description: MirrorVR Frequently Asked Questions
 icon: circle-question
-coverY: 0
 ---
 
 # FAQ

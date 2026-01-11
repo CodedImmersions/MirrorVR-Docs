@@ -29,6 +29,7 @@
 ## Learning about EOS
 
 * [Lobbies](learning-about-eos/lobbies.md)
+* [NAT P2P](learning-about-eos/nat-p2p.md)
 * [Sanctions](learning-about-eos/sanctions.md)
 * [Player Reports](learning-about-eos/player-reports.md)
 * [Title Storage](learning-about-eos/title-storage.md)
