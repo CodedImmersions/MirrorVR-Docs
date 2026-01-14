@@ -11,7 +11,7 @@ Welcome to the MirrorVR Setup! It's a long process, but it's easy if you follow 
 
 {% hint style="warning" %}
 Make sure you have removed your old networking system from the scene before you continue.\
-See [photonvr-to-mirrorvr.md](../guides/photonvr-to-mirrorvr.md "mention") or [flowvr-to-mirrorvr.md](../guides/flowvr-to-mirrorvr.md "mention") for proper cleanup.
+See [photonvr-to-mirrorvr.md](../guides/migration-guides/photonvr-to-mirrorvr.md "mention") or [flowvr-to-mirrorvr.md](../guides/migration-guides/flowvr-to-mirrorvr.md "mention") for proper cleanup.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -96,9 +96,9 @@ Scroll towards the bottom, where it says `Client policies`. Click the blue `Add 
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Name your policy whatever you want, and set `Policy Type` to be `Peer2Peer`.
+Name your policy whatever you want. Follow the video below to set up the client policy.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FK2KwYyJh17evaze4fZSU%2Fuploads%2FVn53CvI33a2ROeQJGXk7%2FScreen%20Recording%202026-01-11%20162131.mp4?alt=media" fullWidth="false" %}
 
 At the bottom right of your screen, press the blue `Add new client policy` button.
 
@@ -199,9 +199,8 @@ Make sure you save your Encryption Key in some Cloud Storage service in case you
 {% step %}
 And the basic setup is done! See below for next steps.
 
-{% hint style="warning" %}
-If you are using Oculus or Steam, there's also a setup for those.\
-See [meta-quest-setup.md](meta-quest-setup.md "mention") or [steam-setup.md](steam-setup.md "mention") to do those.
-{% endhint %}
+#### <mark style="color:orange;">**If you are using Oculus or Steam, there's more setup to do.**</mark>
+
+See [meta-quest-setup.md](meta-quest-setup.md "mention") or [steam-setup.md](steam-setup.md "mention") for details.
 {% endstep %}
 {% endstepper %}

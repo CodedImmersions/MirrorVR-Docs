@@ -45,11 +45,12 @@ Go to Assets/MirrorVR/Third-Party, and delete the Metater folder.
 
 {% stepper %}
 {% step %}
-
+Buy and import [Dissonance](https://assetstore.unity.com/packages/tools/audio/dissonance-voice-chat-70078) and [Dissonance for Mirror](https://assetstore.unity.com/packages/tools/integration/dissonance-for-mirror-networking-143290).\
+For more information, refer to the [Dissonance Docs](https://placeholder-software.co.uk/dissonance/docs/#dissonance-voip).
 {% endstep %}
 
 {% step %}
-
+WIP
 {% endstep %}
 {% endstepper %}
 

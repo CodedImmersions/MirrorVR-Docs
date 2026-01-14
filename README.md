@@ -5,6 +5,8 @@ icon: file-lines
 
 # MirrorVR Documentation
 
+<figure><img src=".gitbook/assets/MirrorVR Banner Transparent.png" alt=""><figcaption></figcaption></figure>
+
 Hello, and welcome to the MirrorVR docs!
 
 MirrorVR is a wrapper for [Mirror Networking](https://github.com/MirrorNetworking/Mirror) that adds easy VR support.\

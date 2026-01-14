@@ -14,7 +14,7 @@ Make sure you thoroughly read this!
 
 {% stepper %}
 {% step %}
-Follow [getting-started](../getting-started/ "mention") and either [meta-quest-setup.md](../getting-started/meta-quest-setup.md "mention") or [steam-setup.md](../getting-started/steam-setup.md "mention") to start.
+Follow [getting-started](../../getting-started/ "mention") and either [meta-quest-setup.md](../../getting-started/meta-quest-setup.md "mention") or [steam-setup.md](../../getting-started/steam-setup.md "mention") to start.
 {% endstep %}
 
 {% step %}

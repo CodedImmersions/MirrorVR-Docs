@@ -7,6 +7,20 @@ icon: ban-bug
 
 Here's a simple guide for grabbing your game logs on both Quest and PC. Providing us with your logs where you have an issue is a key step to fixing your issue and helping us improve MirrorVR.
 
+Steps to follow for each platform:
+
+Meta Quest:\
+\- [#first-steps](mirrorvr-debugging-guide.md#first-steps "mention")\
+\- [#meta-quest](mirrorvr-debugging-guide.md#meta-quest "mention")
+
+_Standalone_ Windows:\
+\- [#first-steps](mirrorvr-debugging-guide.md#first-steps "mention")\
+\- [#windows](mirrorvr-debugging-guide.md#windows "mention")
+
+Unity Editor (Windows, Mac, Linux):\
+\- [#first-steps](mirrorvr-debugging-guide.md#first-steps "mention")\
+\- [#meta-quest](mirrorvr-debugging-guide.md#meta-quest "mention")
+
 ## First Steps
 
 The first thing you will want to do to properly set this up is go to the Network Manager object.\
@@ -106,12 +120,12 @@ And you're done! Great job.
 
 ## Windows
 
-Logs are easy to get on Windows. Super easy.\
+Logs are easy to get on Windows.\
 The only thing you need in advance is&#x20;
 
 {% stepper %}
 {% step %}
-Press Win + R. The run window should pop up, and it should look like this.
+Press Windows Key + R (or search for "Run" in Windows Search). The run window should pop up, and it should look like this.
 
 <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
@@ -151,7 +165,7 @@ And you're done! Great job.
 {% stepper %}
 {% step %}
 Unity Editor is straightforward. Enter play mode and collect your logs if you haven't already.\
-**Make sure you have Info, Warning, and Error enabled in the console.**
+<mark style="color:orange;">**Make sure you have Info, Warning, and Error enabled in the console.**</mark>
 {% endstep %}
 
 {% step %}

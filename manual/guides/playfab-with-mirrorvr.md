@@ -12,3 +12,5 @@ It is strongly recommended not to use PlayFab with MirrorVR, as it compromises t
 ## Introduction
 
 PlayFab, owned by Microsoft Azure, is one of the most popular player management backends for Unity.
+
+WIP
