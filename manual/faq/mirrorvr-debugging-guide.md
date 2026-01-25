@@ -19,7 +19,7 @@ _Standalone_ Windows:\
 
 Unity Editor (Windows, Mac, Linux):\
 \- [#first-steps](mirrorvr-debugging-guide.md#first-steps "mention")\
-\- [#meta-quest](mirrorvr-debugging-guide.md#meta-quest "mention")
+\- [#unity-editor](mirrorvr-debugging-guide.md#unity-editor "mention")
 
 ## First Steps
 

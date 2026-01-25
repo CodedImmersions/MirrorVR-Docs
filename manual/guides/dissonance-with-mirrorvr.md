@@ -11,7 +11,7 @@ Dissonance is one of the most popular voice chat systems for Unity.
 
 ## Prerequisites
 
-To begin, you must have already bought [Dissonance](https://assetstore.unity.com/packages/tools/audio/dissonance-voice-chat-70078) on the Unity Asset Store and have put it in your project. It's $100, so please only get it if you can afford it. If you can't, don't go onto the dark web to try to get it. You'll most likely get malware, not the Unity package you were thinking of. MetaVoiceChat comes pre-installed, which works really well right off the bat.<br>
+To begin, you must have already bought [Dissonance](https://assetstore.unity.com/packages/tools/audio/dissonance-voice-chat-70078) on the Unity Asset Store and have put it in your project. It's $110, so please only get it if you can afford it. If you can't, don't go onto the dark web to try to get it. You'll most likely get malware, not the Unity package you were thinking of. MetaVoiceChat comes pre-installed, which works really well right off the bat.<br>
 
 You also need to have [Dissonance for Mirror](https://assetstore.unity.com/packages/tools/integration/dissonance-for-mirror-networking-143290) imported into your project. It's a free add-on to Dissonance that allows the proper Mirror setup.
 
@@ -50,7 +50,23 @@ For more information, refer to the [Dissonance Docs](https://placeholder-softwar
 {% endstep %}
 
 {% step %}
-WIP
+Go to `Assets/Dissonance/Integrations/MirrorIgnorance` and open `MirrorIgnorancePlayer.cs` in a text editor or an IDE.
+
+Find the line at the top that says `[RequireComponent(typeof (NetworkIdentity))]`. Comment it out.
+
+The line should now look like this:\
+`//RequireComponent(typeof (NetworkIdentity))]`
+
+Save the file.
+{% endstep %}
+
+{% step %}
+Now go to Assets/MirrorVR, and enter the Player prefab.\
+Select the Head GameObject.
+
+Click the Add Component button, and add the following components:\
+\- MirrorIgnorancePlayer\
+\- MirrorIgnoranceCommsNetwork
 {% endstep %}
 {% endstepper %}
 

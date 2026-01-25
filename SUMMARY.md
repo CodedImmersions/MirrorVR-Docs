@@ -23,7 +23,7 @@
   * [Host Migration Controller](manual/components/host-migration-controller.md)
   * [Host Migration Skip](manual/components/host-migration-skip.md)
   * [Mirror Components](https://mirror-networking.gitbook.io/docs/manual/components)
-  * [Mirror VR Manager](manual/components/mirror-vr-manager.md)
+  * [Mirror VR Manager](manual/components/mirror-vr-manager.md "MirrorVRManager")
   * [Mirror VR Player](manual/components/mirror-vr-player.md)
 * [FAQ](manual/faq/README.md)
   * [Common Problems](manual/faq/common-problems.md)
@@ -38,8 +38,9 @@
 * [Title Storage](learning-about-eos/title-storage.md)
 * [Player Data Storage](learning-about-eos/player-data-storage.md)
 
-## Links
+## Resources
 
+* [Press Kit](resources/press-kit.md)
 * [MirrorVR Discord](https://discord.gg/6KCH9xvGUE)
 * [MirrorVR Project Board](https://github.com/orgs/CodedImmersions/projects/1)
 * [Mirror Discord](https://discord.gg/xVW4nU4C34)
